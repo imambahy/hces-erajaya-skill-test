@@ -1,11 +1,11 @@
 ## Goals
-Anda dapat men-develop dashboard berisi chart (bisa berupa pie chart, histogram, dsb) yang menampilkan jumlah karyawan per periode sesuai dengan filter yang dipilih. Tools frontend untuk membuat chart dapat dipilih sesuai dengan kebutuhan. Filter terdiri dari: 
-- Company
-- Division
-- Level
-- Gender
-
-Requirement mini project ini menggunakan PHP Laravel 8 dan database mysql
+- Anda dapat men-develop dashboard berisi chart (bisa berupa pie chart, histogram, dsb) yang menampilkan jumlah karyawan per periode sesuai dengan filter yang dipilih. Tools frontend untuk membuat chart dapat dipilih sesuai dengan kebutuhan. Filter terdiri dari: 
+  * Company
+  * Division
+  * Level
+  * Gender
+- Filter tersebut dapat dikombinasikan, sebagai contoh filter yang dipilih adalah company dan level maka hasil filter terdiri dari jumlah karyawan yang masuk ke dalam 2 kriteria yang dipilih
+- Requirement mini project ini menggunakan PHP Laravel 8 dan database mysql
 
 ## Panduan Pengerjaan
 1. Silahkan clone repository berikut `https://github.com/hafiyyann/hces-erajaya-skill-test`

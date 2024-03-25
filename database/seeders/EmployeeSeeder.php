@@ -25,14 +25,17 @@ class EmployeeSeeder extends Seeder
                 'employee_address'  => $faker->address
             ]);
 
-            for ($i=1; $i < 13 ; $i++) { 
+            $employee_level_id = rand(1, 6);
+            $employee_gender_id = rand(1, 6);
+
+            for ($j=1; $j < 13 ; $j++) {
                 EmployeePeriod::create([
                     'employee_id'   => $employee->id,
                     'division_id'   => rand(1, 6),
                     'company_id'    => rand(1, 6),
-                    'gender_id'     => rand(1, 6),
-                    'level_id'      => rand(1, 6),
-                    'period'        => '2024'.$i
+                    'gender_id'     => $employee_gender_id,
+                    'level_id'      => $employee_level_id,
+                    'period'        => '2024'.str_pad($j, 2, '0', STR_PAD_LEFT)
                 ]);
             }
         }
