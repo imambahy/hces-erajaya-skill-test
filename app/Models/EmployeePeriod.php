@@ -11,10 +11,30 @@ class EmployeePeriod extends Model
 
     protected $fillable = [
         'employee_id',
-        'company_id',
         'division_id',
-        'level_id',
+        'company_id',
         'gender_id',
-        'period'
+        'level_id',
+        'period',
     ];
+
+    public function employee()
+    {
+        return $this->belongsTo(Employee::class);
+    }
+
+    public function division()
+    {
+        return $this->belongsTo(Division::class);
+    }
+
+    public function company()
+    {
+        return $this->belongsTo(Company::class);
+    }
+
+    public function level()
+    {
+        return $this->belongsTo(Level::class);
+    }
 }
